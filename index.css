@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.image{
+    position: fixed;
+    top: 50%;
+    left: 23%;
+    display: flex;
+    flex-direction: row;
+}
+
+#image1{
+    animation: moveable 1s ease-in-out  1 ;
+}
+@keyframes moveable {
+   0%{
+       transform: translateX(-200px);
+   }
+   100%{
+       transform: translateX(1px);
+   }
+}
+
+#image2{
+    animation: movable2 1s ease-in-out 1;
+}
+
+@keyframes movable2 {
+    0%{
+        transform: translateX(410px);
+    }
+    100%{
+        transform: translateX(-1px);
+    }
+}
+
+.text p{
+    font-size: 25px;
+    text-transform: capitalize;
+    position: fixed;
+    left: 70px;
+    bottom: 1.78rem;
+    letter-spacing: 2px;
+    color: #2952a4;
+    /* font-family: 'EB Garamond', serif; */
+    font-family: 'Source Serif Pro', serif;
+}
+
+.text p::after{
+    content: "";
+    position: absolute;
+    background-color:white;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    animation: typing 4s 1s steps(17) infinite;
+}
+
+@keyframes typing {
+    0%{
+        border-left: 2px solid white;
+    }
+    5%{
+        border-left: 2px solid #2952a4;
+    }
+    40%,
+    60%{
+        border-left: 2px solid #2952a4;
+        left: calc(100% + 10px);
+    }
+}
+
+#location1{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    top: 10px;
+    left: 5px;
+    animation: opacity 3.5s ease-in-out  1 ;
+
+}
+#location2{
+    height: 40px;
+    width: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 1px;
+    animation: opacity 3.5s ease-in-out  1 ;
+}
+
+@keyframes opacity {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
