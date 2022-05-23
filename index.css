@@ -16,6 +16,8 @@
 
 #image1{
     animation: moveable 1s ease-in-out  1 ;
+     height: 58px;
+    width: 50px;
 }
 @keyframes moveable {
    0%{
@@ -28,6 +30,9 @@
 
 #image2{
     animation: movable2 1s ease-in-out 1;
+     height: 60px;
+    width: 138px;
+
 }
 
 @keyframes movable2 {
